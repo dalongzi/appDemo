@@ -1,0 +1,17 @@
+<div class="jingxuanMain">
+    <ul>
+        %{  
+            for(var i=1; i<data.length; i++){
+                var dataImg1 = data[i].cover;
+                var dataTitle = data[i].shortTitle;
+                var dataPrice = data[i].price;
+        }%
+        <li>
+            <div><img src={=dataImg1}></div>
+            <div><p>{-dataTitle}</p><span>{-dataPrice}</span></div>
+        </li>
+        %{
+            }
+        }%
+    </ul>
+</div>

@@ -1,10 +1,14 @@
 require.config({
-    bashUrl: '../js',
+    bashUrl: './js',
     paths: {
         axios: 'libs/axios',
         Et: 'libs/easy.templatejs',
         text: 'libs/text',
-        privateaxios: "libs/private-axios"
+        privateaxios: "libs/private-axios",
+        bottomNav: "modules/bottomNav/bottomNav",
+        banner: "modules/banner/banner",
+        nav: "modules/nav/nav",
+        jingxuanMain: "modules/jingxuanMain/jingxuanMain",
     },
     map: {
         "*": {"axios": "privateaxios"},
@@ -12,10 +16,6 @@ require.config({
     }
 });
 
-require(["axios"],function(as){
-    as.get("http://localhost:3000/api/home",{params:{
-        sectionId:1,
-    }}).then(function(resp){
-        console.log(resp);
-    });
+require(["bottomNav","banner","nav","jingxuanMain"],function(bottomNav,banner,nav,jingxuanMain,qitaMain){
+    
 });

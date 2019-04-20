@@ -1,0 +1,66 @@
+<style>
+    .shouyemain{
+        height: 70%;
+    }
+    .jingxuanMain{
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+    }
+    .jingxuanMain li{
+        display: flex;
+        border-top: 1px solid #eee;
+        width: 100%;
+        height: 100px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .jingxuanMain li:nth-child(1){
+        border: none;
+    }
+    .jingxuanMain div:first-child{
+        height: 80px;
+        width: 80px;
+        overflow: hidden;
+        flex-shrink: 0;
+    }
+    img{
+        width: 100%;
+    }
+    .jingxuanMain div:last-child{
+        height: 80px;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-shrink: 0;
+    }
+    .jingxuanMain span{
+        color: #aaa;
+        font-size: 14px;
+    }
+    .jingxuanMain p{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;    
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+    }
+</style>
+
+<div class="jingxuanMain">
+    <ul>
+        %{  
+            for(var i=1; i<data.length; i++){
+                var dataImg = data[i].value.cover;
+                var dataTitle = data[i].value.shortTitle;
+                var dataPrice = data[i].value.price;
+        }%
+        <li>
+            <div><img src={-dataImg}></div>
+            <div><p>{-dataTitle}</p><span>{-dataPrice}</span></div>
+        </li>
+        %{
+            }
+        }%
+    </ul>
+</div>

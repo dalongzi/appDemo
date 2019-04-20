@@ -1,0 +1,51 @@
+<style>
+    article{
+        width: 100%;
+        height: 92%;
+        display: none;
+    }
+    .dashow{
+        display: block;
+    }
+    footer{
+        width: 100%;
+        height: 8%;
+        background: #F7F7F7;
+        position: fixed;
+        bottom: 0;
+        box-sizing: border-box;
+        border-top: 1px solid #B7B7BB;
+    }
+    footer ul{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    footer li{
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #929292;
+    }
+    footer .initli{
+        color: #7BB8FB;
+    }
+</style>
+
+<article class="dashow"></article>
+<article></article>
+<article></article>
+<footer>
+    <ul>
+        %{
+            for(var i=0; i<lists.length; i++){
+                var list = lists[i];
+        }%
+        <li><p>{-list.name}</p></li>
+        %{
+
+            }
+        }%
+    </ul>
+</footer>
