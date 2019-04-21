@@ -1,4 +1,4 @@
-define(["text!./banner.html","Et","axios"],function(bannerHTML,Et,axios){
+define(["text!./banner.html","Et","axios","bottomNav"],function(bannerHTML,Et,axios){
     var obox = document.createElement("div");
     var oarticle = document.getElementsByTagName("article")[0];
     obox.className = "banner";

@@ -1,4 +1,10 @@
-define(["text!./jingxuanMain.html","text!./modules/jingxuanMain/qitaMain.html","Et","axios","banner","nav"],function(jingxuanMHTML,qitaMHTML,Et,axios){
+define([
+    "text!./jingxuanMain.html",
+    "text!./modules/jingxuanMain/qitaMain.html",
+    "Et",
+    "axios",
+    "banner"
+],function(jingxuanMHTML,qitaMHTML,Et,axios){
     var main = document.createElement("main");
     var oarticle = document.getElementsByTagName("article")[0];
     main.className = "shouyemain";

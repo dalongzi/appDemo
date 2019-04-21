@@ -9,6 +9,7 @@ require.config({
         banner: "modules/banner/banner",
         nav: "modules/nav/nav",
         jingxuanMain: "modules/jingxuanMain/jingxuanMain",
+        search: "modules/search/search"
     },
     map: {
         "*": {"axios": "privateaxios"},
@@ -17,10 +18,11 @@ require.config({
 });
 
 require([
-    "bottomNav",
     "banner",
+    "bottomNav",
     "nav",
-    "jingxuanMain"
-],function(bottomNav,banner,nav,jingxuanMain,qitaMain){
+    "jingxuanMain",
+    "search"
+],function(banner,bottomNav,nav,jingxuanMain,search){
     
 });

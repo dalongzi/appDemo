@@ -1,6 +1,6 @@
 require.config({
     paths: {
-        fenlei: "modules/fenleiModules/fenlei"
+        fenlei: "modules/fenleiModules/fenlei",
     }
 });
 

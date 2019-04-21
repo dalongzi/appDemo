@@ -1,4 +1,4 @@
-define(["text!./nav.html","Et","banner","jingxuanMain"],function(navHTML,Et){
+define(["text!./nav.html","Et","jingxuanMain"],function(navHTML,Et){
     var nav = document.createElement("nav");
     var oarticle = document.getElementsByTagName("article")[0];
     oarticle.appendChild(nav);
@@ -8,7 +8,7 @@ define(["text!./nav.html","Et","banner","jingxuanMain"],function(navHTML,Et){
         {name: "优惠"},
         {name: "海淘"},
         {name: "发现"},
-        {name: "原创"},
+        {name: "原创"}
     ];
     var rs = Et.template(navHTML,{navLists:navLists});
     nav.innerHTML = rs;
