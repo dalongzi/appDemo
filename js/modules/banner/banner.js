@@ -25,7 +25,6 @@ define(["text!./banner.html","Et","axios"],function(bannerHTML,Et,axios){
 
         var timer = null;
         var num = 0;
-        // showBox[0].classList.add("show");
         timer = setInterval(function(){
             for(var i=0; i<showBox.length; i++){
                 if(num == i){

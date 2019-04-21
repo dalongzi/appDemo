@@ -16,6 +16,11 @@ require.config({
     }
 });
 
-require(["bottomNav","banner","nav","jingxuanMain"],function(bottomNav,banner,nav,jingxuanMain,qitaMain){
+require([
+    "bottomNav",
+    "banner",
+    "nav",
+    "jingxuanMain"
+],function(bottomNav,banner,nav,jingxuanMain,qitaMain){
     
 });

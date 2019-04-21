@@ -1,4 +1,10 @@
-define(["text!./bottomNav.html","Et"],function(bottomNHTML,Et){
+require.config({
+    paths: {
+        fenlei: "modules/fenleiModules/fenlei"
+    }
+});
+
+define(["text!./bottomNav.html","Et","fenlei"],function(bottomNHTML,Et,fenlei){
     var lists = [
         {name: "首页"},
         {name: "分类"},
@@ -25,6 +31,15 @@ define(["text!./bottomNav.html","Et"],function(bottomNHTML,Et){
                     }
                 }
                 target.className = "initli";
+                switch(num){
+                    case 0:
+                        break;
+                    case 1:
+                        fenlei.text();
+                        break;
+                    case 2:
+                        break;
+                }
                 aarticle[num].className = "dashow";
                 break;
             }
